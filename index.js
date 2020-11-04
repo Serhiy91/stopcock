@@ -53,7 +53,7 @@ class TokenBucket {
       return 0;
     }
 
-    return Math.ceil(this.interval / this.limit - (Date.now() - this.last));
+    return Math.ceil(this.interval);
   }
 }
 
